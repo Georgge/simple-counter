@@ -1,2 +1,3 @@
 # simple-counter
-Simple counter with React Native - My first little project with React Native
+Simple counter with React Native - My first little project with React Native.
+Playing with 'state'
