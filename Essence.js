@@ -3,11 +3,11 @@ import React,{ Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 // create a componet
-class Head extends Component {
+class Essence extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text> { this.props.title } </Text>
+                <Text style={styles.textSize}>{ this.props.numerator }</Text>
             </View>
         );
     }
@@ -16,11 +16,14 @@ class Head extends Component {
 // define your styles
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 3,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#4ccfe0',
-    }
+        backgroundColor: '#eeeeee',
+    },
+    textSize: {
+        fontSize: 50,
+    },
 })
 
-export default Head;
+export default Essence;
