@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import Head from './Head';
 
 class App extends React.Component {
   constructor(){
@@ -24,9 +25,7 @@ class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.boxOne}>
-          <Text>Contador</Text>
-        </View>
+        <Head />
         <View style={styles.boxTwo}>
           <Text>{this.state.numero}</Text>
         </View>
@@ -53,12 +52,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-  },
-  boxOne: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#4ccfe0',
   },
   boxTwo: {
     flex: 3,
