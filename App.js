@@ -24,23 +24,23 @@ class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.cajaUno}>
+        <View style={styles.boxOne}>
           <Text>Contador</Text>
         </View>
-        <View style={styles.cajaDos}>
+        <View style={styles.boxTwo}>
           <Text>{this.state.numero}</Text>
         </View>
-        <View style={styles.cajaTres}>
+        <View style={styles.boxThree}>
           <Button
             onPress={ () => { this.increase(); }}
             title="Increase"
-            color="#d4e157"
-            accessibilityLabel="Touch here"
+            color="#00acc1"
+            accessibilityLabel="Touch here"            
           />
           <Button
             onPress={ () => { this.takeAway(); }}
             title="Take away"
-            color="#d4e157"
+            color="#00acc1"
             accessibilityLabel="Touch here"
           />
         </View>
@@ -54,21 +54,21 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-  cajaUno: {
+  boxOne: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#00ff00',
+    backgroundColor: '#4ccfe0',
   },
-  cajaDos: {
+  boxTwo: {
+    flex: 3,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#eeeeee',
+  },
+  boxThree: {
     flex: 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#90ee90',
-  },
-  cajaTres: {
-    flex: 1,
-    backgroundColor: '#006400',
+    backgroundColor: '#fafafa',
   },
 });
 
