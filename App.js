@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import Head from './Head';
 import Essence from './Essence';
+import Control from './Control';
 
 class App extends React.Component {
   constructor(){
@@ -28,20 +29,7 @@ class App extends React.Component {
       <View style={styles.container}>
         <Head title="Counter"/>
         <Essence numerator={ this.state.number } />
-        <View style={styles.boxThree}>
-          <Button
-            onPress={ () => { this.increase(); }}
-            title="Increase"
-            color="#00acc1"
-            accessibilityLabel="Touch here"            
-          />
-          <Button
-            onPress={ () => { this.takeAway(); }}
-            title="Take away"
-            color="#00acc1"
-            accessibilityLabel="Touch here"
-          />
-        </View>
+        <Control increase={ this.increase } takeAway={ this.takeAway } />
       </View>
     );
   }
@@ -51,11 +39,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-  },
-  boxThree: {
-    flex: 2,
-    backgroundColor: '#fafafa',
-  },  
+  }, 
 });
 
 export default App;

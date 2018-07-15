@@ -16,7 +16,7 @@ class Essence extends Component {
 // define your styles
 const styles = StyleSheet.create({
     container: {
-        flex: 3,
+        flex: 4,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#eeeeee',
